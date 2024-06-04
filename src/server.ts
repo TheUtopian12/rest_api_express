@@ -25,6 +25,9 @@ const server = express()
 
 //Permitir conexiones
 
+/**
+ * 
+
 const corsOptions: CorsOptions = {
     origin: function (origin, callback) {
         if (origin === process.env.FRONTEND_URL) {
@@ -35,6 +38,9 @@ const corsOptions: CorsOptions = {
     }
 }
 server.use(cors(corsOptions))
+
+ */
+
 //Leer datos de formulario
 server.use(express.json())
 //ROUTING
