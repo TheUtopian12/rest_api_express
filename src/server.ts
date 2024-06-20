@@ -1,4 +1,5 @@
 import express from "express";
+
 import router from "./routes";
 import db from './config/db'
 import colors from 'colors'
@@ -43,6 +44,8 @@ const corsOptions: CorsOptions = {
 
 server.use(cors())
 //Leer datos de formulario
+
+
 server.use(express.json())
 //ROUTING
 
